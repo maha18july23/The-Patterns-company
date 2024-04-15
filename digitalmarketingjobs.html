@@ -611,15 +611,22 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script>
-        const questions = document.querySelectorAll('.question');
-        
-        questions.forEach(question => {
-            question.addEventListener('click', () => {
-                question.nextElementSibling.classList.toggle('active');
-                question.classList.toggle('plus');
-                question.classList.toggle('minus');
+        const jobs = document.querySelectorAll(".job");
+    
+        jobs.forEach(job => {
+            job.addEventListener("click", () => {
+                // Close all other active jobs
+                jobs.forEach(otherJob => {
+                    if (otherJob !== job) {
+                        otherJob.nextElementSibling.classList.remove('active');
+                    }
+                });
+                
+                // Toggle the active class for the clicked job
+                job.nextElementSibling.classList.toggle('active');
             });
         });
+    </script>
     </script>
 </body>
 
