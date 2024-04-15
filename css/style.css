@@ -802,5 +802,16 @@ html,body{
   } */
   
 
+.btn-container{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+    margin-top: 30px;
+}
 
- 
+ .apply-now-btn{
+    border: 2px solid #7ED958;
+    background-color: transparent;
+    color: #ffffff;
+    padding: 10px;
+ }
