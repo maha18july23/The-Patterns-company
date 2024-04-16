@@ -53,11 +53,11 @@
                 </button>
                 <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
                     <div class="navbar-nav ms-auto mx-xl-auto p-0">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="index.html" class="nav-item nav-link">Home</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
                         <!-- <a href="service.html" class="nav-item nav-link">Services</a> -->
                         <div class="nav-item dropdown active">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown active ">Services</a>
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
                             <div class="dropdown-menu rounded">
                                 <a href="webdevelopment.html" class="dropdown-item" style="background-color:#7ED958;">
                                     Web Development 
@@ -81,7 +81,7 @@
 
                             </div>
                         </div>
-                        <a href="blog.html" class="nav-item nav-link">Blog</a>
+                        <a href="blog.html" class="nav-item nav-link active">Blog</a>
                         <a href="gallery.html" class="nav-item nav-link">Gallery</a>
                         <a href="internship.html" class="nav-item nav-link">Internship</a>
                         <a href="careers.html" class="nav-item nav-link">Careers</a>
@@ -115,8 +115,8 @@
     </style>
 
 
-    <h2>What is Dynamic website ?</h2>
-    <p>A dynamic website is a type of website that generates content on-the-fly in response to user interactions,
+    <h2 class="blog-heading p-2">What is Dynamic website ?</h2>
+    <p class="blog-description p-2">A dynamic website is a type of website that generates content on-the-fly in response to user interactions,
         allowing for a highly interactive and personalized user experience. Unlike static websites, where content
         remains fixed and unchanged until manually updated, dynamic websites utilize databases and server-side scripting
         languages to dynamically generate content based on user input, preferences, or other variables.
@@ -127,9 +127,15 @@
     <div class="container-fluid px-0">
 
         <div class="container" role="listbox">
-            <div class="row">
-                <div class="col-lg-6 col-md-12  py-5">
-                    <p>Another advantage of dynamic websites is their ability to support user interaction and engagement
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-lg-6 col-md-12">
+                    <img src="./img/dynamic website.avif" class="img-fluid"
+                        style="width:100%; border-radius: 10px;">
+
+                </div>
+
+                <div class="col-lg-6 col-md-12 py-5">
+                    <p class="blog-description">Another advantage of dynamic websites is their ability to support user interaction and engagement
                         through features like online forms, user comments, and interactive elements. These websites
                         often incorporate dynamic forms that allow users to submit information, such as contact details
                         or feedback, which can then be processed in real-time by the server.
@@ -143,12 +149,7 @@
                         Additionally, dynamic websites can facilitate content management and scalability by separating
                         content from presentation.</p>
                 </div>
-                <div class="col-lg-6 col-md-12 ">
-                    <img src="./img/dynamic website.avif" class="img-fluid"
-                        style="width:400px; margin-left: 100px; border-radius: 20%; height:350px">
-
-                </div>
-
+               
 
             </div>
 
@@ -159,14 +160,14 @@
     <div class="container-fluid px-0">
 
         <div class="container" role="listbox">
-            <div class="row">
-                <div class="col-lg-6 col-md-12 ">
-                    <img src="./img/dynamic website1.avif" class="img-fluid"
-                        style="width:400px; margin-left: 100px; margin-top: 40px; border-radius: 20%; height:350px">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-lg-6 col-md-12 order-lg-2">
+                    <img src="./img/dynamic website1.avif" class="img-fluid order-md-2"
+                        style="width:100%; border-radius: 10px;">
 
                 </div>
-                <div class="col-lg-6 col-md-12  py-5">
-                    <p>In the digital age, Social Media Marketing (SMM) has emerged as a paramount tool for businesses
+                <div class="col-lg-6 col-md-12 mt-5 py-5 order-lg-1" >
+                    <p class="blog-description order-md-1">In the digital age, Social Media Marketing (SMM) has emerged as a paramount tool for businesses
                         to reach their target audience effectively. With platforms like Facebook, Instagram, Twitter,
                         and LinkedIn commanding vast user bases, advertising through SMM offers unparalleled
                         opportunities for businesses to connect with potential customers in a more personalized and
@@ -187,6 +188,14 @@
 
         </div>
     </div>
+
+    <style>
+        /* .img-fluid{
+            @media (max-width: 992px){
+                margin-left: 100px !important;
+            }
+        } */
+    </style>
     
 
     <!-- Footer Start -->
@@ -236,7 +245,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-6 text-center">
                     <a href="#" class="h3 " style="color:#7ED958">Our Services</a>
                     <div class="mt-4 d-flex flex-column help-link">
                         <a href="webdevelopment.html" class="mb-2 text-white">Web Development
@@ -290,17 +299,6 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    <script>
-        const questions = document.querySelectorAll('.question');
-        
-        questions.forEach(question => {
-            question.addEventListener('click', () => {
-                question.nextElementSibling.classList.toggle('active');
-                question.classList.toggle('plus');
-                question.classList.toggle('minus');
-            });
-        });
-    </script>
 </body>
 
 </html>
