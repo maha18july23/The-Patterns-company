@@ -483,6 +483,17 @@
 .blog-item .blog-btn {
     z-index: 2;
 }
+@media screen and (max-width: 768px) {
+    .blog-heading{
+        font-size:24px;
+    }
+    
+    .blog-description{
+        font-size: 18px;
+    }
+}
+
+
 
 .blog-btn .blog-btn-icon {
     height: 50px;
