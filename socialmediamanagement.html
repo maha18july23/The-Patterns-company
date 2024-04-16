@@ -148,8 +148,7 @@
         <div class="container" role="listbox">
             <div class="row d-flex justify-content-center align-items-center">
                 <div class="col-lg-6 col-md-12 order-lg-2">
-                    <img src="img/Social-Media-Marketingimg2.jpg" class="img-fluid"
-                        style="width: 100%; border-radius: 10px;">
+                    <img src="img/smm999-removebg.jpg" class="w-100 smm-img" >
 
                 </div>
                 <div class="col-lg-6 col-md-12 order-lg-1 py-5">
@@ -251,6 +250,15 @@
     </div>
     <!-- Footer End -->
 
+    <style>
+        .smm-img{
+            margin-bottom: 100px;
+            @media screen and(max-width: 768px){
+                margin-bottom: 0;
+            }
+        }
+    </style>
+
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-secondary btn-square rounded-circle back-to-top"><i
@@ -267,17 +275,6 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    <script>
-        const questions = document.querySelectorAll('.question');
-
-        questions.forEach(question => {
-            question.addEventListener('click', () => {
-                question.nextElementSibling.classList.toggle('active');
-                question.classList.toggle('plus');
-                question.classList.toggle('minus');
-            });
-        });
-    </script>
 </body>
 
 </html>
