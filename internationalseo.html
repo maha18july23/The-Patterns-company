@@ -53,11 +53,11 @@
                 </button>
                 <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
                     <div class="navbar-nav ms-auto mx-xl-auto p-0">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="index.html" class="nav-item nav-link ">Home</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
                         <!-- <a href="service.html" class="nav-item nav-link">Services</a> -->
                         <div class="nav-item dropdown active">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown active ">Services</a>
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
                             <div class="dropdown-menu rounded">
                                 <a href="webdevelopment.html" class="dropdown-item" style="background-color:#7ED958;">
                                     Web Development 
@@ -81,7 +81,7 @@
 
                             </div>
                         </div>
-                        <a href="blog.html" class="nav-item nav-link">Blog</a>
+                        <a href="blog.html active" class="nav-item nav-link">Blog</a>
                         <a href="gallery.html" class="nav-item nav-link">Gallery</a>
                         <a href="internship.html" class="nav-item nav-link">Internship</a>
                         <a href="careers.html" class="nav-item nav-link">Careers</a>
@@ -114,8 +114,8 @@
        
     </style>
 
-    <h2>What is International SEO ?</h2>
-    <p>
+    <h2 class="blog-heading p-2">What is International SEO ?</h2>
+    <p class="blog-description p-2">
         International SEO (Search Engine Optimization) refers to the process of optimizing a website to rank well in search engine results pages (SERPs) across multiple countries or regions. It involves strategies and techniques aimed at improving a website's visibility and relevance in international markets, thereby attracting organic traffic from users searching for relevant content in different languages or regions.
         
         One of the key aspects of international SEO is understanding the unique challenges and opportunities associated with targeting multiple countries or regions. This includes factors such as language barriers, cultural differences, and variations in search engine algorithms and user behavior across different regions.
@@ -124,18 +124,19 @@
     <div class="container-fluid px-0">
            
         <div class="container" role="listbox">
-            <div class="row">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-lg-6 col-md-12 ">
+                    <img src="img/seo-search-engine-optimization-business-concept_31965-15931.jpg" class="img-fluid" style="width:100%;border-radius: 10px;">
+            
+                </div>
                 <div class="col-lg-6 col-md-12  py-5">
-                    <p>This research helps businesses tailor their SEO strategies to meet the needs and expectations of their target audience in each market.
+                    <p class="blog-description">This research helps businesses tailor their SEO strategies to meet the needs and expectations of their target audience in each market.
 
                         Language and localization play a crucial role in international SEO. Optimizing website content for different languages involves translating keywords, meta tags, headings, and other on-page elements to ensure they align with the language preferences of the target audience. Additionally, localization involves adapting content to reflect cultural nuances, preferences, and local customs, which can significantly impact search visibility and user engagement.
                         
                         Technical optimization is another essential aspect of international SEO. This includes implementing hreflang tags to indicate language and regional variations of a website's content to search engines, helping them serve the most relevant content to users based on their language and location. </p>
                 </div>
-                <div class="col-lg-6 col-md-12 ">
-                    <img src="img/seo-search-engine-optimization-business-concept_31965-15931.jpg" class="img-fluid" style="width:700px; height:350px">
-            
-                </div>
+                
              
     
         </div>
@@ -148,12 +149,12 @@
            
         <div class="container" role="listbox">
             <div class="row">
-                <div class="col-lg-6 col-md-12 ">
-                    <img src="img/3d-rendering-search-engine-background_23-2150562448.jpg" class="img-fluid" style="margin-top: 60px; height: 370px;">
+                <div class="col-lg-6 col-md-12 order-lg-2">
+                    <img src="img/3d-rendering-search-engine-background_23-2150562448.jpg" class="img-fluid" style="margin-top: 60px;width: 100%; border-radius: 10px;">
             
                 </div>
-                <div class="col-lg-6 col-md-12  py-5">
-                    <p>Building a strong backlink profile is crucial for international SEO success. Acquiring high-quality backlinks from relevant websites in target countries or regions can boost a website's authority and credibility in local search results. However, it's essential to prioritize natural link-building tactics and avoid black hat techniques that could result in penalties from search engines.
+                <div class="col-lg-6 col-md-12 order-lg-1 py-5">
+                    <p class="blog-description">Building a strong backlink profile is crucial for international SEO success. Acquiring high-quality backlinks from relevant websites in target countries or regions can boost a website's authority and credibility in local search results. However, it's essential to prioritize natural link-building tactics and avoid black hat techniques that could result in penalties from search engines.
 
                         Local SEO optimization complements international SEO efforts by focusing on improving a website's visibility in specific geographic areas within target countries or regions. This includes creating and optimizing Google My Business listings, local citations, and directories to enhance local search rankings and attract nearby customers.
                         
@@ -217,7 +218,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-6 text-center">
                     <a href="#" class="h3 " style="color:#7ED958">Our Services</a>
                     <div class="mt-4 d-flex flex-column help-link">
                         <a href="webdevelopment.html" class="mb-2 text-white">Web Development
@@ -271,17 +272,6 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    <script>
-        const questions = document.querySelectorAll('.question');
-        
-        questions.forEach(question => {
-            question.addEventListener('click', () => {
-                question.nextElementSibling.classList.toggle('active');
-                question.classList.toggle('plus');
-                question.classList.toggle('minus');
-            });
-        });
-    </script>
 </body>
 
 </html>
