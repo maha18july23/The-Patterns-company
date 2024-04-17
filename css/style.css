@@ -485,7 +485,8 @@
 }
 @media screen and (max-width: 768px) {
     .blog-heading{
-        font-size:24px;
+        font-size:22px;
+        text-align: left !important;
     }
     
     .blog-description{
