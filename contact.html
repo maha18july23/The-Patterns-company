@@ -145,28 +145,36 @@
                 <div class="col-lg-6 col-md-12 col-sm-12 wow fadeIn" data-wow-delay=".5s">
                     <div class="p-4">
                         <form>
-                            <div class="mb-4">
-                                Name<input type="text" class="form-control border-1 py-2" placeholder="First Name">
-                            </div>
-                            <div class="mb-4">
-                                Mobile Number<input type="number" class="form-control border-1 py-2" placeholder="Your  Mobile Number">
-                            </div>
-                            <div class="mb-4">
-                                Email<input type="email" class="form-control border-1 py-2" placeholder="Your Email">
-                            </div>
-                            <div class="mb-4">
-                                Company<textarea type="text" class="form-control border-1 py-2"
-                                    placeholder="Company"></textarea>
-                            </div>
-                            <div class="mb-4">
-                                Message<textarea type="text" class="form-control border-1 py-2"
-                                    placeholder="Message"></textarea>
-                            </div>
+                            <form action="#" method="POST">
+                                <div class="form-group">
+                                  <label for="name" class="required">Name:</label>
+                                  <input type="text" id="name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                  <label for="email" class="required">Email:</label>
+                                  <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" class="required">Mobile No:</label>
+                                    <input type="email" id="email" name="email" required>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="email" class="required">Company:</label>
+                                    <input type="email" id="email" name="email" required>
+                                  </div>
+                                <div class="form-group">
+                                  <label for="message" class="required">Message:</label>
+                                  <textarea id="message" name="message"></textarea>
+                                </div>
+                                <div class="super">
+                                <button type="submit">Submit</button>
+                                </div>
+                              </form>
 
-                            <div class="mb-4 ">
+                            <!-- <div class="mb-4 ">
                                 <input type="submit" value="Send Me Quote" class="form-control border-1 py-2"
                                     placeholder="Your Name">
-                            </div>
+                            </div> -->
                         </form>
 
                     </div>
@@ -177,6 +185,32 @@
                         margin-left: 100px;
                     }
                 </style> -->
+                <style>
+                    .form-group {
+    margin-bottom: 20px;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  .required::after {
+    content: "*";
+    color: red;
+  }
+  .super button{
+    padding:15px;
+
+    background-color:limegreen;
+
+  }
+</style>
                 <div class="row g-5 mb-5 justify-content-center flex-column">
                     <div class="col-xl-12 col-lg-12 wow fadeIn" data-wow-delay=".3s">
                         <div class="d-flex  p-3 rounded">
