@@ -53,11 +53,11 @@
                 </button>
                 <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
                     <div class="navbar-nav ms-auto mx-xl-auto p-0">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="index.html" class="nav-item nav-link">Home</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
                         <!-- <a href="service.html" class="nav-item nav-link">Services</a> -->
                         <div class="nav-item dropdown active">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown active ">Services</a>
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
                             <div class="dropdown-menu rounded">
                                 <a href="webdevelopment.html" class="dropdown-item" style="background-color:#7ED958;">
                                     Web Development 
@@ -81,7 +81,7 @@
 
                             </div>
                         </div>
-                        <a href="blog.html" class="nav-item nav-link">Blog</a>
+                        <a href="blog.html" class="nav-item nav-link active">Blog</a>
                         <a href="gallery.html" class="nav-item nav-link">Gallery</a>
                         <a href="internship.html" class="nav-item nav-link">Internship</a>
                         <a href="careers.html" class="nav-item nav-link">Careers</a>
@@ -114,16 +114,23 @@
        
     </style>
 
-    <h2>What is Display Ads ?</h2>
-    <p>Display ads are a form of visual advertising used in graphic design to promote products, services, or brands across various digital platforms. These ads typically consist of images, text, and sometimes multimedia elements such as videos or animations. They are strategically placed on websites, social media platforms, mobile apps, or other digital channels to attract the attention of potential customers and drive engagement.
+    <div class="container">
+        <h2 class="blog-heading pt-2 text-center">What is Display Ads ?</h2>
+        <p class="blog-description">
+            Display ads are a form of visual advertising used in graphic design to promote products, services, or brands across various digital platforms. These ads typically consist of images, text, and sometimes multimedia elements such as videos or animations. They are strategically placed on websites, social media platforms, mobile apps, or other digital channels to attract the attention of potential customers and drive engagement. One of the key elements of display ads is their visual appeal. Graphic designers use their creativity to craft eye-catching designs that effectively convey the intended message and capture the audience's interest. 
+        </p>
+    </div>    
 
-        One of the key elements of display ads is their visual appeal. Graphic designers use their creativity to craft eye-catching designs that effectively convey the intended message and capture the audience's interest. </p>
     <div class="container-fluid px-0">
 
         <div class="container" role="listbox">
-            <div class="row">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-lg-6 col-md-12 ">
+                    <img src="./img/displayyyyyyy.jpg" class="img-fluid" style="width:100%; height:350px; border-radius: 10px;">
+
+                </div>
                 <div class="col-lg-6 col-md-12  py-5">
-                    <p>This often involves selecting vibrant colors, compelling imagery, and engaging typography to make the ad stand out amidst the online clutter.
+                    <p class="blog-description">This often involves selecting vibrant colors, compelling imagery, and engaging typography to make the ad stand out amidst the online clutter.
 
                         In addition to visual appeal, effective display ads also rely on concise and persuasive copywriting. Designers must carefully choose the wording to communicate the value proposition of the product or service being advertised and compel viewers to take action, such as clicking through to learn more or making a purchase.
                         
@@ -131,12 +138,6 @@
                         
                         Display ads are often part of broader marketing campaigns, and therefore they need to align with the overall branding strategy of the company or product. </p>
                 </div>
-                <div class="col-lg-6 col-md-12 ">
-                    <img src="./img/displayyyyyyy.jpg" class="img-fluid" style="width:700px; height:350px; margin-top: 40px;">
-
-                </div>
-
-
             </div>
 
         </div>
@@ -146,13 +147,13 @@
     <div class="container-fluid px-0">
 
         <div class="container" role="listbox">
-            <div class="row">
-                <div class="col-lg-6 col-md-12 ">
-                    <img src="./img/static website.avif" class="img-fluid" style="margin-top: 60px; height: 490px;">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-lg-6 col-md-12 order-lg-2">
+                    <img src="./img/static website.avif" class="img-fluid" style="width: 100%; height: 450px;">
 
                 </div>
-                <div class="col-lg-6 col-md-12  py-5">
-                    <p>Designers must adhere to brand guidelines regarding logo usage, color schemes, and messaging tone to maintain brand consistency and reinforce brand recognition among consumers.
+                <div class="col-lg-6 col-md-12 order-lg-1 py-5">
+                    <p class="blog-description">Designers must adhere to brand guidelines regarding logo usage, color schemes, and messaging tone to maintain brand consistency and reinforce brand recognition among consumers.
 
                         Furthermore, display ads are typically used in conjunction with targeting options provided by advertising platforms to reach specific audience segments. Designers may need to tailor the visuals and messaging of the ads based on factors such as demographics, interests, or browsing behavior to increase relevance and effectiveness.
                         
@@ -219,7 +220,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-6 text-center">
                     <a href="#" class="h3 " style="color:#7ED958">Our Services</a>
                     <div class="mt-4 d-flex flex-column help-link">
                         <a href="webdevelopment.html" class="mb-2 text-white">Web Development
@@ -273,17 +274,6 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    <script>
-        const questions = document.querySelectorAll('.question');
-        
-        questions.forEach(question => {
-            question.addEventListener('click', () => {
-                question.nextElementSibling.classList.toggle('active');
-                question.classList.toggle('plus');
-                question.classList.toggle('minus');
-            });
-        });
-    </script>
 </body>
 
 </html>
