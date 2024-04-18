@@ -469,6 +469,22 @@
     justify-content: center;
     opacity: 0;
 }
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    
+  }
+  
+  .text {
+    background-color: transparent;
+    padding: 10px;
+  }
 
 .project-content a {
     display: inline-block;

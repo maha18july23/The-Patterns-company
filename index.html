@@ -27,6 +27,8 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    
+  
 </head>
 
 <body>
@@ -107,9 +109,31 @@
 
         <!-- Carousel Start -->
 
-        <video style="width: 100%;"  autoplay>
+        <video id="my-video" class="video-js" autoplay preload="auto" style="width: 100%;">
             <source src="./img/video/Hello Apple Vision Pro.mp4" type="video/mp4">
         </video>
+        <div class="text-overlay">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6">
+                    </div>
+                    <div class="col-lg-6 exp-details-container">
+                        <p class="exp">5+ Years Of Expereince</p>
+                        <p  class="view">We Create </br> Future Websites</p>
+                        <p  class="cal">Call Us Today</p>
+                        <div>
+                        <a class="code" href="tel:91-8500693113">91-8500693113</a>
+                       </div>
+                    </div>
+                </div>
+            </div>
+           
+          </div>
+          <script>
+            document.addEventListener('DOMContentLoaded', function () {
+              var player = videojs('my-video');
+            });
+          </script>
     <div class="whatsapp">
         <a href="https://wa.me/+918500693113">
             <i class="fab fa-whatsapp"></i>
@@ -121,6 +145,78 @@
     <style>
         .hero-section {
             position: relative;
+        }
+
+        .exp-details-container{
+            margin-left: 450px;
+        }
+        .exp{
+            margin-left: 450px; 
+            font-size:20px;
+        }
+        .view{
+            font-size: 70px;
+            font-family:sans-serif;
+            text-align: left; 
+            width: 700px; 
+            margin-left: 400px; 
+            margin-bottom: 90px;
+        }
+        .cal{
+            font-size: 18px;
+            margin-left: 400px;
+            margin-bottom: 0;
+            text-align:left;
+        }
+        .code{
+            font-size: 40px; 
+            color: #7ED958; 
+            margin-left: 320px;
+            background-color: #000000;
+        }
+        .code:hover{
+            color: #7ED958;
+        }
+        @media (min-width: 768px) and (max-width: 992px){
+            .exp-details-container{
+                margin-left:250px;
+            }
+            .exp{
+            margin-right: 460px;
+            }
+            .view{
+                margin-left: 450px; 
+                font-size: 50px;
+            }
+            .code{
+                margin-right:530px;
+            }
+            .cal{
+                font-size: 17px;
+                margin-left: 450px;
+            }
+        }
+        @media (max-width:768px){
+            .exp-details-container{
+                margin-left:60px;
+            }
+            .exp{
+            margin-left: 230px;
+            }
+            .view{
+                margin-left: 770px; 
+                font-size: 30px;
+            }
+            .cal{
+                font-size: 17px;
+                margin-left: 770px;
+                margin-bottom:126px;
+            }
+            .code{
+                font-size: 25px;
+                margin-bottom:400px;
+                margin-left: 160px;
+            }
         }
 
         /* .hero-section .hero {
