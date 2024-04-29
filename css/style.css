@@ -793,6 +793,7 @@
 html,body{
     height:100%;
     width:100%;
+    font-family: 'Heebo',sans-serif;
 }
 #main{
     width: 100%;
