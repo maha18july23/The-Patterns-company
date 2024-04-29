@@ -6,7 +6,9 @@
     --secondary:#181b18;
     --white:#ffff;
 }
-
+.king{
+    border-bottom: 2px solid white;
+ }
 
 #spinner {
     opacity: 0;
@@ -21,17 +23,85 @@
     z-index: 999;
 
 }
+.faq {
+    margin-bottom: 20px;
+}
 
+.kumar {
+    font-size: 17px;
+    color: var(--white);
+}
+
+.question {
+    cursor: pointer;
+ 
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    background-color: var(--primary);
+    color: var(--white);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.answer {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+    color: #787878;
+}
+
+.plus::after {
+    content: "+";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.minus::after {
+    content: "-";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.answer.active {
+    display: block;
+}
+.what img{
+    width:120px;
+    height:120px;
+    margin-left: 160px;
+    margin-bottom: 30px;
+}
+.yahoo{
+    text-align: center;
+    margin-bottom: 25px;
+    color: var(--white);
+}
+.egg{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+.kkk{
+    margin-bottom:20px;
+}
 .whatsapp i {
     font-size: 2.5rem;
     padding: 10px;
     color: #000;
-    background-color: #7ED958;
+    background-color: var(--primary);
     border-radius: 50%;
 }
 
 .whatsapp:hover i {
-    color: #7ED958;
+    color: var(--primary);
     background-color: black;
 }
  #spinner.show {
