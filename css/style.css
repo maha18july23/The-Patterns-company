@@ -965,3 +965,10 @@ html,body{
 .first-letter{
     text-indent: 180px;
 }
+.blog-img{
+    width: 300px;
+    height: 250px;
+    @media (max-width:992px){
+        width: 100%;
+    }
+}
