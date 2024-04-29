@@ -6,7 +6,9 @@
     --secondary:#181b18;
     --white:#ffff;
 }
-
+.king{
+    border-bottom: 2px solid white;
+ }
 
 #spinner {
     opacity: 0;
