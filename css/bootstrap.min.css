@@ -8438,11 +8438,12 @@ fieldset:disabled .btn {
 }
 
 .bg-light {
-    background-color: #f8f8f9 !important
+    background-color: #ffffff !important
+    
 }
 
 .bg-dark {
-    background-color: #181b18 !important
+    background-color: #000000 !important
 }
 
 .bg-body {
