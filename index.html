@@ -55,9 +55,9 @@
                     <div class="navbar-nav ms-auto mx-xl-auto p-0">
                         <a href="index.html" class="nav-item nav-link active">Home</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
-                        <!-- <a href="service.html" class="nav-item nav-link">Services</a> -->
-                        <div class="nav-item dropdown active ">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown active ">Services</a>
+                       
+                        <div class="nav-item dropdown active">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
                             <div class="dropdown-menu rounded" style="background-color: #000000; ">
                                 <a href="webdevelopment.html" class="dropdown-item king"  >
                                     Web Development
@@ -81,6 +81,7 @@
                                 <a href="googleads.html" class="dropdown-item king">Google
                                     Ads
                                 </a>
+
 
                             </div>
                         </div>
@@ -406,75 +407,7 @@ letter-spacing: 5px;
     <!--FAQ Start-->
 
     <style>
-        .faq {
-            margin-bottom: 20px;
-        }
-
-        .kumar {
-            font-size: 17px;
-            color: white;
-        }
-
-        .question {
-            cursor: pointer;
-            background-color: #f0f0f0;
-            padding: 10px;
-            border-radius: 5px;
-            margin-bottom: 5px;
-            position: relative;
-            background-color: #7ed958;
-            color: #787878;
-            font-weight: 600;
-            font-size: 18px;
-        }
-
-        .answer {
-            display: none;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            margin-top: 5px;
-            color: #787878;
-        }
-
-        .plus::after {
-            content: "+";
-            position: absolute;
-            right: 10px;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-
-        .minus::after {
-            content: "-";
-            position: absolute;
-            right: 10px;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-
-        .answer.active {
-            display: block;
-        }
-        .what img{
-            width:120px;
-            height:120px;
-            margin-left: 160px;
-            margin-bottom: 30px;
-        }
-        .yahoo{
-            text-align: center;
-            margin-bottom: 25px;
-            color: #ffff;
-        }
-        .egg{
-            text-align: center;
-            margin-top: 25px;
-            margin-bottom: 30px;
-        }
-        .kkk{
-            margin-bottom:20px;
-        }
+        
     </style>
      <div class="container-fluid kkk" style="background-color: #7ED958;">
         <div class="row">
@@ -1025,7 +958,7 @@ letter-spacing: 5px;
                     </div>
                 </div>
                 <div class="col-lg-3 charminar">
-                    <img src="./img/char222.png" style="object-fit: scale-down;max-width: 100%; ">
+                    <img src="./img/char2222.png" style="object-fit: scale-down;max-width: 100%; ">
 
                 </div>
             </div>
@@ -1033,7 +966,13 @@ letter-spacing: 5px;
                 .charminar{
                      position: absolute;
                      right: 2%;
-                     top: -60%;
+                     top: -50%;
+                }
+                @media(max-width:992px){
+                    .charminar{
+                     position: unset;
+                    text-align: center;
+                }
                 }
             </style>
             <hr class="text-light mt-5 mb-4">
