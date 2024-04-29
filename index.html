@@ -108,18 +108,14 @@
         </div>
     </div>
     <!-- Navbar End -->
-    <style>
-    .king{
-        text-decoration: underline;
-    }
-    </style>
+
 
     <!-- Carousel Start -->
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-4 text-center d-flex flex-column justify-content-center ps-5 order-sm-1 order-lg-0 mb-5 mt-5">
+            <div class="hero-content col-lg-3 text-center ps-5 order-sm-1 order-lg-0 mb-5 mt-5">
                 <p class="fs-6 font-weight-bold">5+ YEARS OF EXPERIENCE</p>
-                <h3 class="fs-2">WE CREATE<br/> FUTURE WEBSITES</h3>
+                <h3 class="fs-2">WE <br> CREATE<br/> FUTURE <br> WEBSITES</h3>
                 <div class="d-flex justify-content-center mt-3 mb-3 rounded">
                     <div class="flex-shrink-0 btn-square bg-secondary rounded-circle"
                         style="width: 64px; height: 64px;">
@@ -131,25 +127,50 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-8">
-                <video class="video-player" loop autoplay preload="auto" muted>
-                    <source src="./img/video/Hello Apple Vision Pro.mp4" type="video/mp4">
-                </video>
+            <div class="col-lg-9">
+                <div class="video">
+                    <video  id="myCanvas" class="video-player" loop autoplay preload="auto" muted>
+                        <source src="./img/video/Hello Apple Vision Pro.mp4" type="video/mp4">
+                    </video>
+                </div>
+                
             </div>
         </div>
     </div>
 
-
+ 
     <style>
-        .video-player {
+        .hero-content{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .hero-content h3{
+            font-size: 3rem !important;
+font-weight: 100 !important;
+line-height: 80px;
+letter-spacing: 5px;
+/* -webkit-text-stroke: 2px;
+-webkit-text-stroke-color: #7ED958; */
+        }
+.video{
+   
+}
+.video video {
             width: 100%;
-            border-radius: 42% 0 0 42%;
-            /* clip-path: (50% 0%, 100% 1%, 100% 35%, 100% 70%, 100% 100%, 53% 100%, 8% 100%, 0 79%, 0 23%, 9% 0); */
+           height: 100%;
+         
+           clip-path: circle(100% at 100% 40%);
+
+        }
+        .video video{
+            height: 100%;
         }
         @media(max-width:992px){
-            .video-player {
+            .video video {
             width: 100%;
             
+            border-radius: unset;
             clip-path: unset;
         }
         }
