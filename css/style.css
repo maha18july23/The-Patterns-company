@@ -396,6 +396,24 @@
 .services-item .services-content-icon p {
     transition: .5s;
 }
+.think{
+    font-size:35px;
+    border-bottom:5px solid #7ED958 !important;
+    width: fit-content;
+    margin-block: 20px;
+  }
+  .gdk{
+    font-size: 42px;
+  }
+  .whi{
+    color: #ffff !important;
+  }
+  .whi11{
+    color: #7ED958 !important;
+  }
+  .watch{
+    font-size: 17px;
+  }
 /* .video-container {
     position: relative;
     width: 100%;

@@ -127,7 +127,7 @@
                 </div>
             </div>
             <div class="col-lg-8">
-                <video class="video-player" loop autoplay preload="auto">
+                <video class="video-player" loop autoplay preload="auto" muted>
                     <source src="./img/video/Hello Apple Vision Pro.mp4" type="video/mp4">
                 </video>
             </div>
@@ -138,7 +138,15 @@
     <style>
         .video-player {
             width: 100%;
-            border-radius: 45% 0 0 45%;
+            /* border-radius: 50% 0 0 50%; */
+            clip-path: polygon(50% 0%, 100% 1%, 100% 35%, 100% 70%, 100% 100%, 53% 100%, 8% 100%, 0 79%, 0 23%, 9% 0);
+        }
+        @media(max-width:992px){
+            .video-player {
+            width: 100%;
+            
+            clip-path: unset;
+        }
         }
     </style>
 
@@ -800,7 +808,7 @@
     <!-- Footer Start -->
     <div class="container-fluid footer  wow fadeIn" data-wow-delay=".3s">
         <div class="container pt-5 pb-4 mt-2" style="max-width: 100%;">
-            <div class="row g-5">
+            <div class="row g-5 position-relative">
                 <div class="col-lg-3 col-md-6 text-center">
                     <a href="index.html">
                         <img src="./img/tpchhhhhhhhh.png">
@@ -860,11 +868,18 @@
                             </a>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 charminar">
                     <img src="./img/char222.png" style="object-fit: scale-down;max-width: 100%; ">
 
                 </div>
             </div>
+            <style>
+                .charminar{
+                     position: absolute;
+                     right: 2%;
+                     top: -60%;
+                }
+            </style>
             <hr class="text-light mt-5 mb-4">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start">
