@@ -169,7 +169,7 @@
                                 <label for="message" class="required">Message:</label>
                                 <textarea id="message" name="message"></textarea>
                             </div>
-                            <div class="super">
+                            <div class="super d-flex justify-content-center">
                                 <button type="submit">Submit</button>
                             </div>
                         </form>
@@ -206,6 +206,9 @@
                     border-radius: 4px;
                     box-sizing: border-box;
                 }
+                textarea{
+                    width: 100%;
+                }
 
                 .required::after {
                     content: "*";
@@ -214,9 +217,13 @@
 
                 .super button {
                     padding: 15px;
-
+                    border: none;
                     background-color: limegreen;
-
+                    border-radius: 12px;
+                    padding: 20px;
+                    @media (max-width:998px){
+                        width: 100%;
+                    }
                 }
             </style>
                 <div class="col-xl-6 col-lg-6 col-12 wow fadeIn" data-wow-delay=".3s">
@@ -251,16 +258,10 @@
                         </div>
                         <div class="ms-3">
                             <h4 class="text-primary">Email Us</h4>
-                            <a class="h5 text-white" href="mailto:info@example.com"
+                            <a class="h5 text-white mail" href="mailto:info@example.com"
                                 target="_blank">info@thepatternscompany.com</a>
                         </div>
                     </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 wow fadeIn" data-wow-delay=".5s">
-                    
-                </div>
-                <div class="col-xl-6 col-lg-6 wow fadeIn" data-wow-delay=".7s">
-                    
                 </div>
             </div>
         </div>
@@ -300,6 +301,12 @@
                 flex-wrap: wrap;
             }
         }
+        .mail{
+            @media (max-width:992px){
+                font-size: 17px;
+            }
+        }
+
     </style>
     <!-- Footer Start -->
     <div class="container-fluid footer  wow fadeIn" data-wow-delay=".3s">
