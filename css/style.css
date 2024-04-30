@@ -945,6 +945,10 @@ html,body{
     background-size: cover;
   } */
   
+.service-img{
+    width: 300px;
+    height: 250px;
+}
 
 .btn-container{
     display: flex;
