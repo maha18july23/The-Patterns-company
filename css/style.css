@@ -469,6 +469,9 @@
     font-size:35px;
     border-bottom:5px solid #7ED958 !important;
     width: fit-content;
+    @media (max-width:992px) {
+        font-size: 28px;
+    }
   }
   .gdk{
     font-size: 42px;
@@ -962,6 +965,9 @@ html,body{
 
 .first-letter{
     text-indent: 180px;
+    @media (max-width:992px) {
+        text-indent: 70px;
+    }
 }
 .blog-img{
     width: 300px;
