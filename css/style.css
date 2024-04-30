@@ -76,7 +76,6 @@
 .what img{
     width:120px;
     height:120px;
-    margin-left: 160px;
     margin-bottom: 30px;
 }
 .yahoo{
@@ -670,6 +669,10 @@
     padding-bottom: 0;
 }
 
+.team-image{
+    text-align: center;
+}
+
 .team-img {
     border: 15px solid var(--bs-white);
 }
@@ -832,11 +835,6 @@
 /*** Footer Start ***/
 .footer{
     background-color: #000000;
-   
-   
-       
-  
-   
 }
 .footer .short-link a,
 .footer .help-link a,
