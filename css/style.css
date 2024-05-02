@@ -1485,10 +1485,7 @@ html,body{
   
     .contact-page .form-div {
         padding: 0px 30px;
-  
-       
         overflow: hidden;
-  
     }
   
     .contact-page .form-div form {
@@ -1500,8 +1497,7 @@ html,body{
     }
   
     .contact-page .form-div form .input {
-        /* background-color: transparent; */
-        /* border: 1px solid #fff; */
+     
         padding: 10px 10px;
         width: 100%;
         color: #fff;
