@@ -8356,7 +8356,7 @@ fieldset:disabled .btn {
     }
 
 .text-secondary {
-    color: #26d48c !important
+    color: var(--primary) !important
 }
 
 .text-success {

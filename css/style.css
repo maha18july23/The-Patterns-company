@@ -51,6 +51,7 @@ place-items: center;
     visibility: hidden;
     transition: opacity .8s ease-out, visibility 0s linear .5s;
     z-index: 99999;
+    background-color: var(--primary);
  }
  .whatsapp {
     position: fixed;
@@ -249,7 +250,7 @@ place-items: center;
 }
 
 .navbar .navbar-nav .nav-link {
-    padding: 10px;
+    padding: 10px 20px;
     color:lime;
     font-size: 18px;
     outline: none;
@@ -269,7 +270,10 @@ place-items: center;
     vertical-align: middle;
     margin-left: 8px;
 }
-
+.navbar .nav-item .dropdown-menu {
+   
+    background-color: var(--secondary) !important;
+}
 @media (min-width: 992px) {
     .navbar .nav-item .dropdown-menu {
         display: block;
@@ -279,6 +283,7 @@ place-items: center;
         transform-origin: 0% 0%;
         transition: .5s;
         opacity: 0;
+        background-color: var(--secondary) !important;
     }
 }
 
@@ -1471,3 +1476,79 @@ html,body{
        .abot_box_ctrl .ctrl-width-mob a {
            display: block;
        }
+
+       .section-padding {
+        padding: 60px 0px 0px 0px;
+        overflow: hidden;
+    }
+  
+  
+    .contact-page .form-div {
+        padding: 0px 30px;
+  
+       
+        overflow: hidden;
+  
+    }
+  
+    .contact-page .form-div form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+  
+    .contact-page .form-div form .input {
+        /* background-color: transparent; */
+        /* border: 1px solid #fff; */
+        padding: 10px 10px;
+        width: 100%;
+        color: #fff;
+        font-size: 22px;
+        border: none;
+        border-radius: 10px;
+        background: #343232;
+        box-shadow: inset 5px 5px 10px #282727,
+            inset -5px -5px 10px #403e3e;
+  
+    }
+  
+    .contact-page .form-div form .form-btn {
+        background: transparent;
+        border: 1px solid #fff;
+        padding: 5px 10px;
+        /* width: 100%; */
+        color: #fff;
+        font-size: 18px;
+        margin-top: 10px;
+  
+    }
+    .marg75{
+        margin-bottom: 1rem;
+        border: 10px solid var(--primary);
+    }
+    .marg75-heading span{
+        font-size:60px;
+       
+    }
+    .marg75-heading {
+        font-size:40px;
+       letter-spacing: 2px;
+    }
+    .iconbox{
+       
+    }
+    .iconbox i {color:var(--primary);font-size: 35px;}
+.iconbox p {
+    margin: 0 0 0 70px;
+}
+.iconbox h3 {
+    margin: -30px 0 25px 70px;
+    font-weight: 400;
+    font-size: 20px;
+}
+.col-xs-4{
+    padding: 10px;
+
+}
