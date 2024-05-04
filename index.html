@@ -767,26 +767,26 @@
     <style>
 
     </style>
-    <section class="container-fluid scroll-section" style="background-color: #7ED958;" id="why">
-        <div class="container">
+    <section class="container-fluid scroll-section py-5" style="background-color: #7ED958;" id="why">
+        <div class="container py-5">
             <div class="row">
                 <h3 class="egg m-0 py-2">Why Choose Us</h3>
                 <p class="egg m-0 py-2 text-white">Empowering marketing and sales teams with clear visibility, flexibility, and
                     profound technical proficiency – Your Digital Partner for Measurable Growth</p>
 
                 <div class="col-lg-4 col-md-4 what d-flex flex-column justify-content-center align-items-center">
-                    <img src="./img/choose1.jpg">
+                    <img src="./img/choose1.jpg" class="rotate-img">
                     <h3 class="yahoo">Perfection Anytime</h3>
                     <p class="yahoo">With perfection we create flawless websites and mobile apps for businesses of all
                         sizes.</p>
                 </div>
                 <div class="col-lg-4 col-md-4 what d-flex flex-column justify-content-center align-items-center">
-                    <img src="./img/choose2.jpg">
+                    <img src="./img/choose2.jpg" class="heart-beat">
                     <h3 class="yahoo">24/7 Communication</h3>
                     <p class="yahoo">We always authentic to delivery on time.</p>
                 </div>
                 <div class="col-lg-4 col-md-4 what d-flex flex-column justify-content-center align-items-center">
-                    <img src="./img/choose3.jpg">
+                    <img src="./img/choose3.jpg" class="rotate-img">
                     <h3 class="yahoo">Experienced Team</h3>
                     <p class="yahoo">We have a skilled and dynamic team for development.</p>
                 </div>
@@ -799,8 +799,31 @@
    
 
     <style>
-
-    </style>
+        .rotate-img{
+            animation: rotateImg 1s infinite ease-in-out;
+        }
+        @keyframes rotateImg {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        .heart-beat{
+        animation: heartBeat 1s infinite ease-in-out;
+}
+@keyframes heartBeat {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
 
 
     <!-- Testimonial Start -->
@@ -819,7 +842,7 @@
 
 
                             <div class="col-md-12 col-lg-12 wow fadeIn text-center" data-wow-delay="0.1s">
-                                <img src="./img/admin.jpg" alt="">
+                                <img src="./img/test_men_img_1.jpg" alt="" class="test_img">
                                 <p>The social media management services in Hyderabad
                                     provided by this company have
                                     been a game-changer for my business. Their team is knowledgeable, creative, and
@@ -832,7 +855,7 @@
 
                             </div>
                             <div class="col-md-12 col-lg-12 wow fadeIn text-center" data-wow-delay="0.1s">
-                                <img src="./img/admin.jpg" alt="">
+                                <img src="./img/test_men_img_2.jpg" alt="">
                                 <p>I recently engaged this media and Portfolio
                                     Company to develop a video for my
                                     business, the video was interesting, informative and the team was professional,
@@ -865,7 +888,11 @@
 
     <!-- Testimonial End -->
     <style>
-
+        .test-img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
     </style>
 
     <!-- Contact Start -->
