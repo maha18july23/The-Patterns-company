@@ -150,7 +150,7 @@
                 <div class="col-lg-6 col-md-12 col-sm-12 wow fadeIn" data-wow-delay=".5s">
                     <div class="p-4">
                         <form >
-                            <form action="#" method="POST">
+                            <form action="myForm" method="POST">
                                 <div class="form-group">
                                     <label for="name" class="required">Name:</label>
                                     <input type="text" id="name" name="name" required>
@@ -161,11 +161,11 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="email" class="required">Mobile No:</label>
-                                    <input type="email" id="email" name="email" required>
+                                    <input type="number" id="number" name="phone" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="email" class="required">Company:</label>
-                                    <input type="email" id="email" name="email" required>
+                                    <input type="text" id="company" name="company" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="message" class="required">Message:</label>
@@ -173,7 +173,7 @@
                                 </div>
                                 <div class="super d-flex justify-content-center">
                         
-                                    <button type="submit">Submit</button>
+                                    <button type="submit" target="_blank" name="submit">Submit</button>
                         
                                 </div>
                             </form>
@@ -430,6 +430,32 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+
+    <script>
+        document.getElementById("myForm").addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Get form data
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var mobileNumber = document.getElementById("number").value;
+            var service = document.getElementById("company").value;
+            var message = document.getElementById("message").value;
+
+            // Construct WhatsApp URL with pre-filled message
+            var phone = "7013801846"; // Replace with the recipient's phone number
+            var whatsappUrl = "https://wa.me/" + phone + "?text=" +
+                encodeURIComponent("Name: " + name + "\n" +
+                    "Email: " + email + "\n" +
+                    "Mobile Number: " + mobileNumber + "\n" +
+                    "Service: " + company + "\n" +
+                    "Message: " + message);
+
+            // Redirect to WhatsApp URL
+            window.location.href = whatsappUrl;
+        });
+    </script>
 </body>
 
 </html>
