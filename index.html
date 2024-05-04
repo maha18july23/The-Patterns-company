@@ -311,27 +311,52 @@
                         </em>
                     </p>
                     <p class="">
-                        <a href="#" class="btn btn-shutter-more">
+                        <a href="webdevelopment.html" class="btn btn-shutter-more">
                             Explore
                         </a>
                     </p>
+                    <div class="d-flex">
+                        <div class="mt-3 p-3">
+                            <p class="text-white">
+                                Patterns Company specializes in delivering bespoke web development solutions tailored to your unique needs and aspirations.
+                            </p>
+                        </div>
+                        <div class="mt-3 p-3">
+                            <p class="text-white">
+                                Web development encompasses building, designing, and maintaining websites to ensure optimal functionality and user experience.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-6">
-                    <img src="./img/webdevelopment.jpg" alt="web development" class="desc-img">
+                <div class="col-lg-6 d-flex justify-content-center " data-aos="fade-left"  data-wow-delay=".3s">
+                        <img src="./img/tim-removebg-preview.png" alt="Animated image" class="desc-img"  >
                 </div>
-                <div class="col-lg-3 mt-3">
-                    <p class="text-white">
-                        Patterns Company specializes in delivering bespoke web development solutions tailored to your unique needs and aspirations.
-                    </p>
-                </div>
-                <div class="col-lg-3 mt-3">
-                    <p class="text-white">
-                        Web development encompasses building, designing, and maintaining websites to ensure optimal functionality and user experience.
-                    </p>
-                </div>
+                
             </div>
         </div>
     </div>
+    <style>
+        .animated-image {
+    transition: transform 0.5s ease;
+    transform: translateX(100%);
+}
+
+.show {
+    transform: translateX(0);
+}
+    </style>
+    <script>
+        window.addEventListener('scroll', function() {
+    var image = document.querySelector('.animated-image');
+    var imagePosition = image.getBoundingClientRect().top;
+    var screenHeight = window.innerHeight;
+
+    // If the top of the image is in the view
+    if (imagePosition - screenHeight <= 0) {
+        image.classList.add('show');
+    }
+});
+    </script>
     <div class="container-fluid bg-white py-5">
         <div class="container py-5">
             <div class="row d-flex align-items-center">
@@ -348,7 +373,7 @@
                         </em>
                     </p>
                     <p class="">
-                        <a href="#" class="btn btn-shutter-more black-border">
+                        <a href="appdevelopment.html" class="btn btn-shutter-more black-border">
                             Explore
                         </a>
                     </p>
@@ -381,7 +406,7 @@
                         </em>
                     </p>
                     <p class="">
-                        <a href="#" class="btn btn-shutter-more">
+                        <a href="searchengineoptimization.html" class="btn btn-shutter-more">
                             Explore
                         </a>
                     </p>
@@ -434,7 +459,7 @@
             font-size: 14px;
         }
         .desc-img{
-            width: 100%;
+            width: 60%;
         }
         .black-border{
             border: 1px solid #000000;
@@ -442,373 +467,165 @@
         }
     </style>
 
-    <br> <br><br> <br>
-    <hr>
-    <div class="col-lg-12" style="text-align: center;  ">
-        <h2 class="marg75-heading"><b> <span>W</span>ebsite Design and Development Services in Hyderabad </b> </h2>
-    </div>
+<section class="container-fluid py-5 team scroll-section" id="team">
+    <div class="container py-5">
+        <div class="text-left mx-auto wow fadeIn" data-wow-delay=".3s">
 
-    <br> <br>
-    <div class="container marg75">
-        <div class="row">
-            <div class="col-lg-4 col-md-4 col-xs-4 col-ms-4">
-                <div class="iconbox">
-                    <i class="fa fa-paint-brush"></i>
-                    <h3>Static Website Design</h3>
-                    <p>If you're looking for static web design services in HyderabadStatic web design refers to websites
-                        that have fixed content and don't require frequent updates.</p>
+            <h2 class="text-uppercase" data-aos="fade-down">Meet our expert</h2>
+        </div>
+        <div class="row d-flex align-items-center">
+            <div class="col-lg-4 col-md-6 d-flex justify-content-center align-items-center mb-2">
+                <div class="team-image">
+
+                    <h4 class="team-name mt-3">
+                        <div class="v11_14">
+                            <span class="v11_15" data-aos="fade-right">T</span>
+                            <span class="v11_16" data-aos="fade-left">e</span>
+                            <span class="v11_17" data-aos="fade-left">a</span>
+                            <span class="v11_18" data-aos="fade-right">m</span>
+                        </div>
+                    </h4>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-xs-4 col-ms-4">
-                <div class="iconbox">
-                    <i class="fa fa-globe"></i>
-                    <h3>Dynamic Website Design</h3>
-                    <p>We offer best web site design for your business which will be in fully responsive site and that
-                        you will be proud of & websites allow you to update content regularly .</p>
+            <div class="col-lg-3 col-md-6 d-flex justify-content-center align-items-center mb-2">
+                <div class="team-image">
+                    <img src="./img/patterns2.png" alt="" data-aos="fade-right">
+                    <h4 class="photo mt-3">Ajay Manthri</h4>
+                    <p class="last">Founder & CEO</p>
+                </div>
+
+            </div>
+            <div class="col-lg-4 col-md-6 d-flex justify-content-center align-items-center mb-2">
+                <div class="team-image">
+                    <img src="./img/patterns3.png" alt="" data-aos="fade-left">
+                    <h4 class="photo mt-3">Manasa Reddy</h4>
+                    <p class="last">Manager & HR</p>
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6 d-flex justify-content-center align-items-center mb-2">
+                <div class="team-image">
+                    <img src="./img/patterns1.png" alt="">
+                    <h4 class="photo mt-3">Gayathri</h4>
+                    <p class="last">Currently Screaming I need a BREAK….</p>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-md-6 d-flex justify-content-center align-items-center mb-2">
+                <div class="team-image">
+                    <img src="./img/chandra (5).jpg" alt="">
+                    <h4 class="photo mt-3">Jyothsna</h4>
+                    <p class="last">Founder & CEO</p>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-md-6 d-flex justify-content-center align-items-center mb-2">
+                <div class="team-image">
+                    <img src="./img/Dedeepya.webp" alt="">
+                    <h4 class="photo mt-3">Dedeepya</h4>
+                    <p class="last">Always ranks #1 in search results</p>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-md-6 d-flex justify-content-center align-items-center mb-2">
+                <div class="team-image">
+                    <img src="./img/ros (3).jpg" alt="">
+                    <h4 class="photo mt-3">Sangeetha</h4>
+                    <p class="last">Founder & CEO</p>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-md-6 d-flex justify-content-center align-items-center mb-2">
+                <div class="team-image">
+                    <img src="./img/ros (2).jpg" alt="">
+                    <h4 class="photo mt-3">Hema</h4>
+                    <p class="last">Founder & CEO</p>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-md-6 d-flex justify-content-center align-items-center mb-2">
+                <div class="team-image">
+                    <img src="./img/ros (1).jpg" alt="">
+                    <h4 class="photo mt-3">Roshini</h4>
+                    <p class="last">Founder & CEO</p>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-md-6 d-flex justify-content-center align-items-center mb-2">
+                <div class="team-image">
+                    <img src="./img/ros (4).jpg" alt="">
+                    <h4 class="photo mt-3">Ramya</h4>
+                    <p class="last">Founder & CEO</p>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-md-6 d-flex justify-content-center align-items-center mb-2">
+                <div class="team-image">
+                    <img src="./img/chandra (1).jpg" alt="">
+                    <h4 class="photo mt-3">Chandra Kanth</h4>
+                    <p class="last">Founder & CEO</p>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-md-6 d-flex justify-content-center align-items-center mb-2">
+                <div class="team-image">
+                    <img src="./img/chandra (2).jpg" alt="">
+                    <h4 class="photo mt-3">Phanindra</h4>
+                    <p class="last">Founder & CEO</p>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-md-6 d-flex justify-content-center align-items-center mb-2">
+                <div class="team-image">
+                    <img src="./img/chandra (3).jpg" alt="">
+                    <h4 class="photo mt-3">Daiva Kumar</h4>
+                    <p class="last">Founder & CEO</p>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-md-6 d-flex justify-content-center align-items-center mb-2">
+                <div class="team-image">
+                    <img src="./img/chandra (4).jpg" alt="">
+                    <h4 class="photo mt-3">Jagadeesh</h4>
+                    <p class="last">Founder & CEO</p>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-md-6 d-flex justify-content-center align-items-center mb-2">
+                <div class="team-image">
+                    <img src="./img/ros (5).jpg" alt="">
+                    <h4 class="photo mt-3">Sathwika</h4>
+                    <p class="last">Founder & CEO</p>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-md-6 d-flex justify-content-center align-items-center mb-2">
+                <div class="team-image">
+                    <img src="./img/patterns4.png" alt="">
+                    <h4 class="photo mt-3">Pandu Reddy</h4>
+                    <p class="last">Aaj mei Khuch Naya Karunga</p>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-md-6 d-flex justify-content-center align-items-center mb-2">
+                <div class="team-image">
+                    <img src="./img/patterns6.png" alt="">
+                    <h4 class="photo mt-3">Srini</h4>
+                    <p class="last">Hyderabad Public School ka Property</p>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-xs-4 col-ms-4">
-                <div class="iconbox">
-                    <i class="fa fa-server"></i>
-                    <h3>HTML Website Design </h3>
-                    <p>Creating an HTML website is a fundamental approach to web design and can be a cost-effective
-                        option for simple web projects. If you require more advanced features or frequent content
-                        updates </p>
+            <div class="col-lg-3 col-md-6 d-flex justify-content-center align-items-center mb-2">
+                <div class="team-image">
+                    <img src="./img/suvarna.jpg" alt="">
+                    <h4 class="photo mt-3">Suvarna</h4>
+                    <p class="last">Quickly put the developer on speed dial.</p>
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-4 col-xs-4 col-ms-4">
-                <div class="iconbox">
-                    <i class="fa fa-paint-brush"></i>
-                    <h3>Wordpress Website Design</h3>
-                    <p>Creating a WordPress website in Hyderabad can be an excellent choice, as the platform is
-                        user-friendly and expertise in WordPress development Hyderabad. </p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-xs-4 col-ms-4">
-                <div class="iconbox">
-                    <i class="fa fa-globe"></i>
-                    <h3>Low Cost Website Design</h3>
-                    <p>We ensure that the quality of the website design and functionality meets your needs. A poorly
-                        designed website can have a negative impact on your business so aim for a balance between
-                        affordability and quality. </p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-xs-4 col-ms-4">
-                <div class="iconbox">
-                    <i class="fa fa-server"></i>
-                    <h3>Website Development </h3>
-                    <p> Website development in Hyderabad offers a wide range of options, from simple static sites to
-                        complex dynamic web applications. Affordable and reliable services. </p>
-                </div>
-            </div>
         </div>
     </div>
-    <br> <br><br>
-    <hr>
-    <div class="col-lg-12" style="text-align: center; ">
-        <h2 class="marg75-heading"><b> <span>G</span>raphic Design Services in Hyderabad </b> </h2>
-    </div>
-
-    <br> <br>
-
-
-    <div class="container marg75">
-        <div class="row">
-            <div class="col-lg-4 col-md-4 col-xs-4 col-ms-4">
-                <div class="iconbox">
-                    <i class="fa fa-leaf" aria-hidden="true"></i>
-                    <h3>Logo Design</h3>
-                    <p>Logo is identifies of your business and speaks volumes about your business logo is the company
-                        trade mark for all your advertisements </p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-xs-4 col-ms-4">
-                <div class="iconbox">
-                    <i class="fa fa-desktop" aria-hidden="true"></i>
-                    <h3>Brochure Design</h3>
-                    <p> When seeking brochure design services, consider your target audience, the message you want to
-                        convey, and your budget. </p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-xs-4 col-ms-4">
-                <div class="iconbox">
-                    <i class="fa fa-floppy-o" aria-hidden="true"></i>
-                    <h3>Flyer Design </h3>
-                    <p>Ultimately, a well-designed flyer can be a powerful marketing tool to promote your business,
-                        event, or special offering. </p>
-                </div>
-            </div>
-            <!-- <div class="col-lg-4 col-md-4 col-xs-4 col-ms-4">
-                <div class="iconbox">
-                    <i class="fa fa-line-chart" aria-hidden="true"></i>
-                    <h3> Printing Services </h3>
-                    <p> When seeking printing services, it's important to consider the specific requirements of your
-                        project, including quantity, materials, finishing options. </p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-xs-4 col-ms-4">
-                <div class="iconbox">
-                    <i class="fa fa-file-text-o"></i>
-                    <h3>Leaflets Designs </h3>
-                    <p> Professional design services can help create a visually appealing and effective leaflet that
-                        stands out in the crowd. </p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-xs-4 col-ms-4">
-                <div class="iconbox">
-                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                    <h3> Cap/T-Print Printing Services </h3>
-                    <p> it's possible that "T-Print Printing Services" is a relatively small or new company that may not
-                        have extensive online presence or reviews. </p>
-                </div>
-            </div> -->
-            <div class="col-lg-4 col-md-4 col-xs-4 col-ms-4">
-                <div class="iconbox">
-                    <i class="fa fa-line-chart" aria-hidden="true"></i>
-                    <h3>Company Profile Design</h3>
-                    <p> Effective company profile design relies on well-organized layouts and typography. </p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-xs-4 col-ms-4">
-                <div class="iconbox">
-                    <i class="fa fa-business-time"></i>
-                    <h3>Business Cards Design </h3>
-                    <p> Search engine marketing (SEM) is one of the most powerful ways to grow your business and online
-                        promotions on internet.</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-xs-4 col-ms-4">
-                <div class="iconbox">
-                    <i style="font-size:24px" class="fa fa-acquisitions-incorporated">&#xf1d7;</i>
-                    <h3>Social Media Post design </h3>
-                    <p> Consistent and visually appealing social media posts are essential for building a strong online
-                        presence and engaging with your audience effectively. </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-    <br> <br><br>
-    <hr>
-    <div class="col-lg-12" style="text-align: center; ">
-        <h2 class="marg75-heading"><b> <span>D</span> igital Marketing Services in Hyderabad </b> </h2>
-    </div>
-
-    <br> <br>
-
-
-    <div class="container marg75">
-        <div class="row">
-            <div class="col-lg-4 col-md-4 col-xs-4 col-ms-4">
-                <div class="iconbox">
-                    <i class="fa fa-leaf" aria-hidden="true"></i>
-                    <h3>SEO Services</h3>
-                    <p>SEO services aim to optimize your website for search engines like Google, Bing, and Yahoo to rank
-                        higher in search results.</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-xs-4 col-ms-4">
-                <div class="iconbox">
-                    <i class="fa fa-desktop" aria-hidden="true"></i>
-                    <h3>Google Ads Services</h3>
-                    <p> These services are crucial for businesses and advertisers looking to drive targeted traffic to
-                        their websites.</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-xs-4 col-ms-4">
-                <div class="iconbox">
-                    <i class="fa fa-google-plus-g" aria-hidden="true"></i>
-                    <h3>GMB Services </h3>
-                    <p>We offer Google My Business services allows businesses to manage their online listing, enhance
-                        their visibility on Google Search and Google Maps </p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-xs-4 col-ms-4">
-                <div class="iconbox">
-                    <i class="fa fa-line-chart" aria-hidden="true"></i>
-                    <h3>Social Media Marketing</h3>
-                    <p> Social media has become a powerful tool for reaching and engaging with target audiences. </p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-xs-4 col-ms-4">
-                <div class="iconbox">
-                    <i class="fa fa-globe"></i>
-                    <h3>Website Traffic </h3>
-                    <p> These services focus on driving organic or paid traffic to a website, which can lead to higher
-                        visibility, engagement, and potentially more conversions.</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-xs-4 col-ms-4">
-                <div class="iconbox">
-                    <i style="font-size:24px" class="fab fa-facebook"></i>
-                    <h3>Facebook Marketing </h3>
-                    <p> Facebook is one of the largest social media platforms with a wide and diverse user base, making
-                        it a valuable channel for businesses to connect with their audience. </p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-xs-4 col-ms-4">
-                <div class="iconbox">
-                    <i class="fab fa-instagram" aria-hidden="true"></i>
-                    <h3>Instagram Marketing </h3>
-                    <p> Instagram, a visually-centric social media platform, provides opportunities for businesses to
-                        connect with their target audience through engaging content and advertising. </p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-xs-4 col-ms-4">
-                <div class="iconbox">
-                    <i class="fab fa-whatsapp"></i>
-                    <h3>WhatsApp Marketing </h3>
-                    <p> WhatsApp is a widely used platform with a massive user base, making it an attractive channel for
-                        businesses to engage with customers. </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Services Start -->
-
-
-
-    <!-- <section class="container-fluid services py-5 scroll-section" style="background-color:#000000" id="services">
-        <div class="container">
-            <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 100%;">
-                <h5 class="text-primary" style="font-size:50px;">Our Services</h5>
-                <h1 class="mb-4" style="font-size:30px; color: #ffff;">Services Built Specifically For Your Business
-                </h1>
-                <p class="kumar">Effective Branding is the crucial for business success as per our branding Digital
-                    Marketing Agency in Hyderabad. Contact us today to hear about how we can help you in developing the
-                    powerful and like nothing else in the world brand.</p>
-            </div>
-            <div class="row g-5 services-inner">
-                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
-                    <div class="services-item bg-light">
-                        <div class="p-4 text-center services-content">
-                            <a href="webdevelopment.html">
-                                <div class="services-content-icon">
-
-                                    <img src="./img/web and app deployment.webp" alt="" style="max-width: 100%;">
-                                    <h4 class="mb-3">Web And App Development Services</h4>
-                                    <p class="mb-4 blog-card-description" style="justify-content: left;">Web and
-                                        app development by Patterns
-                                        Company is a seamless blend of innovation and functionality. Our team crafts
-                                        dynamic
-                                        websites.
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
-                    <div class="services-item bg-light">
-                        <div class="p-4 text-center services-content">
-                            <a href="googleads.html">
-                                <div class="services-content-icon">
-                                   
-                                    <img src="./img/googleadds999.jpg" alt="" style="max-width: 100%;">
-                                    <h4 class="mb-3">Google Ads Services In Hyderabad</h4>
-                                    <p class="mb-4 blog-card-description" style="justify-content: left;">Maximize Your
-                                        Online Visibility with
-                                        Our
-                                        Google Ads Services! Reach Your Target Audience Instantly and Drive Qualified
-                                        Traffic. </p>
-
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
-                    <div class="services-item bg-light">
-                        <div class="p-4 text-center services-content">
-                            <a href="socialmediamarketing.html">
-                                <div class="services-content-icon">
-                                  
-                                    <img src="./img/Digitalmarketingservices.webp" alt="" style="max-width: 100%;">
-                                    <h4 class="mb-3">SMM (Social Media Marketing) Services In Hyderabad</h4>
-                                    <p class="mb-4 blog-card-description" style="justify-content: left;">Social Media
-                                        Marketing (SMM) is a
-                                        powerful strategy for businesses to connect with their audience. </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
-                    <div class="services-item bg-light">
-                        <div class="p-4 text-center services-content">
-                            <a href="searchengineoptimization.html">
-                                <div class="services-content-icon">
-                                  
-                                    <img src="./img/search-engines-concept-illustration.webp" alt=""
-                                        style="max-width: 100%;">
-                                    <h4 class="mb-3">SEO (Search Engine Optimization) Services In Hyderabad</h4>
-                                    <p class="mb-4 blog-card-description" style="justify-content: left;">With the SEO
-                                        services offered by
-                                        Patterns
-                                        Company, you may improve search engine rankings and increase organic traffic to
-                                        your
-                                        website.
-                                    </p>
-                                </div>
-                            </a>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
-                    <div class="services-item bg-light">
-                        <div class="p-4 text-center services-content">
-                            <a href="ecommerce.html">
-                                <div class="services-content-icon">
-                                  
-                                    <img src="./img/online-shopping-concept-illustration.webp" alt=""
-                                        style="max-width: 100%;">
-                                    <h4 class="mb-3">E-Commerce Services In Hyderabad</h4>
-                                    <p class="mb-4 blog-card-description" style="justify-content: left;">If you want to
-                                        start a new business
-                                        or
-                                        improve your already existing
-                                        business online, Its better to use E-Commerce Services In Hyderabad it is best
-                                        as
-                                        well as low cost medium. </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
-                    <div class="services-item bg-light">
-                        <div class="p-4 text-center services-content">
-                            <a href="graphicdesigning.html">
-                                <div class="services-content-icon">
-                                  
-                                    <img src="./img/graphic - Copy.webp" alt="" style="max-width: 100%;">
-                                    <h4 class="mb-3">Graphic Designing Services In Hyderabad</h4>
-                                    <p class="mb-4 blog-card-description" style="justify-content: left;">For the purpose
-                                        of graphically
-                                        communicating ideas, messages, and concepts, effective graphic design integrates
-                                        creativity, technology, and communication.
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section> -->
-
-    <style>
-
-    </style>
-
+</section>
     <!-- Services End -->
     <section class="container-fluid blog py-5 scroll-section" style="background-color:#000000" id="blog">
         <div class="container">
@@ -971,261 +788,9 @@
         </div>
     </section>
     <!--  -->
-    <!-- <div class="faq">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10">
-                    <h2>Frequently Asked Questions</h2>
-                </div>
-            </div>
-            <div id="faq-wrapper">
-                <div class="accordion" id="faq">
-                    <div class="faq is-active">
-                        <div class="question plus" id="faqhead1" style="background-color: #7ED958;">
-                            What services does Patterns Company offer?
-                        </div>
-                        <div id="faq1" class="answer collapse show" aria-labelledby="faqhead1" data-parent="#faq">
-                            Customized development and digital marketing services are offered by Patterns Company to
-                            meet the diverse needs of its clientele. Some of the key services include Web development,
-                            Digital Marketing(SEO, SMM, Google ads), Graphic Designing, and Wed design.
-                        </div>
-                    </div>
-                    <div class="faq is-active">
-                        <div class="question plus" id="faqhead1" style="background-color: #7ED958;">
-                            How does Patterns Company approach web development projects?
-                        </div>
-                        <div id="faq1" class="answer collapse show" aria-labelledby="faqhead1" data-parent="#faq">
-                            When working on web development projects, Patterns Company follows a methodical process,
-                            making sure to fully comprehend the goals of the customer and design a website that
-                            satisfies those demands. Here's a step by step process: Initial Consultation and
-                            Requirements Gathering, Strategic Planning and Conceptualization, Design and Development,
-                            User Experience (UX) Optimization, Launch and Deployment, Post-Launch Support
-                            and Maintenance.
-                        </div>
-                    </div>
-                    <div class="faq is-active">
-                        <div class="question plus" id="faqhead1" style="background-color: #7ED958;">
-                            How does Patterns Company stay updated with the latest trends in digital marketing and
-                            development?
-                        </div>
-                        <div id="faq1" class="answer collapse show" aria-labelledby="faqhead1" data-parent="#faq">
-                            Patterns Company stays updated with the latest popular things in digital marketing and
-                            development through a variety of methods like Continuous learning, Industry research,
-                            Networking, partnership with clients, trying new things out and invention of new things.
-                            Patterns Company ensures that they stay at the forefront of digital marketing and popular
-                            items development by using these strategies. This allows them to provide the newest and
-                            greatest solutions and help their clients succeed.
-                        </div>
-                    </div>
-                    <div class="faq is-active">
-                        <div class="question plus" id="faqhead1" style="background-color: #7ED958;">
-                            How does Patterns Company ensure data security and privacy in its projects?
-                        </div>
-                        <div id="faq1" class="answer collapse show" aria-labelledby="faqhead1" data-parent="#faq">
-                            Patterns Company secures data security and privacy in its projects through a many-sided
-                            approach. They employ strong and healthy turning messages into secret code ways of doing
-                            things to safeguard sensitive data both traveling and at rest, securing that unauthorized
-                            access is prevented. Access controls are strictly enforced, limiting access to confidential
-                            information only to authorized personnel through mechanisms like role-based access control
-                            and multi-factor authentication. Regular security audits and following the law checks secure
-                            that their systems meet industry standards and rules, while employee training programs
-                            develop a culture of security knowing about something within the organization.
-                        </div>
-                    </div>
-                    <div class="faq is-active">
-                        <div class="question plus" id="faqhead1" style="background-color: #7ED958;">
-                            How does Patterns Company integrate SEO strategies into web development projects?
-                        </div>
-                        <div id="faq1" class="answer collapse show" aria-labelledby="faqhead1" data-parent="#faq">
-                            Patterns Company perfectly combines different things together so they work as one unit SEO
-                            success plans into its web development projects to secure best visibility and ranking on
-                            search engine results pages (SERPs). They begin by managing and doing complete and thorough
-                            keyword research to identify clearly connected or related search terms and phrases that
-                            match up with the client's goals and target audience. Using this data, they improve as much
-                            as possible website structure, meta tags, headings, and content to improve crawlability and
-                            indexability for search engine bots. Additionally, Patterns Company concentrates on
-                            producing excellent, captivating material that benefits consumers and organically includes
-                            relevant keywords. By following SEO best practices and staying updated with computer
-                            code-related changes, Patterns Company makes as big as possible the possibility of organic
-                            traffic and improved search engine rankings for their clients' websites. </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!--  -->
-    <!-- </div> -->
-    <!--FAQ End-->
-    <!-- <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-4 col-md-4">
-                <img src="./img/3d (6).jpg">
-                
-            </div>
-
-        </div>
-    </div> -->
-
+   
     <!-- Team Start -->
-    <section class="container-fluid py-5 team scroll-section" id="team">
-        <div class="container py-5">
-            <div class="text-left mx-auto wow fadeIn" data-wow-delay=".3s">
-
-                <h2 class="text-uppercase" data-aos="fade-down">Meet our expert</h2>
-            </div>
-            <div class="row d-flex align-items-center">
-                <div class="col-lg-4 col-md-6 d-flex justify-content-center align-items-center mb-2">
-                    <div class="team-image">
-
-                        <h4 class="team-name mt-3">
-                            <div class="v11_14">
-                                <span class="v11_15" data-aos="fade-right">T</span>
-                                <span class="v11_16" data-aos="fade-left">e</span>
-                                <span class="v11_17" data-aos="fade-left">a</span>
-                                <span class="v11_18" data-aos="fade-right">m</span>
-                            </div>
-                        </h4>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 d-flex justify-content-center align-items-center mb-2">
-                    <div class="team-image">
-                        <img src="./img/patterns2.png" alt="" data-aos="fade-right">
-                        <h4 class="photo mt-3">Ajay Manthri</h4>
-                        <p class="last">Founder & CEO</p>
-                    </div>
-
-                </div>
-                <div class="col-lg-4 col-md-6 d-flex justify-content-center align-items-center mb-2">
-                    <div class="team-image">
-                        <img src="./img/patterns3.png" alt="" data-aos="fade-left">
-                        <h4 class="photo mt-3">Manasa Reddy</h4>
-                        <p class="last">Manager & HR</p>
-                    </div>
-
-                </div>
-
-                <div class="col-lg-3 col-md-6 d-flex justify-content-center align-items-center mb-2">
-                    <div class="team-image">
-                        <img src="./img/patterns1.png" alt="">
-                        <h4 class="photo mt-3">Gayathri</h4>
-                        <p class="last">Currently Screaming I need a BREAK….</p>
-                    </div>
-
-                </div>
-                <div class="col-lg-3 col-md-6 d-flex justify-content-center align-items-center mb-2">
-                    <div class="team-image">
-                        <img src="./img/chandra (5).jpg" alt="">
-                        <h4 class="photo mt-3">Jyothsna</h4>
-                        <p class="last">Founder & CEO</p>
-                    </div>
-
-                </div>
-                <div class="col-lg-3 col-md-6 d-flex justify-content-center align-items-center mb-2">
-                    <div class="team-image">
-                        <img src="./img/Dedeepya.webp" alt="">
-                        <h4 class="photo mt-3">Dedeepya</h4>
-                        <p class="last">Always ranks #1 in search results</p>
-                    </div>
-
-                </div>
-                <div class="col-lg-3 col-md-6 d-flex justify-content-center align-items-center mb-2">
-                    <div class="team-image">
-                        <img src="./img/ros (3).jpg" alt="">
-                        <h4 class="photo mt-3">Sangeetha</h4>
-                        <p class="last">Founder & CEO</p>
-                    </div>
-
-                </div>
-                <div class="col-lg-3 col-md-6 d-flex justify-content-center align-items-center mb-2">
-                    <div class="team-image">
-                        <img src="./img/ros (2).jpg" alt="">
-                        <h4 class="photo mt-3">Hema</h4>
-                        <p class="last">Founder & CEO</p>
-                    </div>
-
-                </div>
-                <div class="col-lg-3 col-md-6 d-flex justify-content-center align-items-center mb-2">
-                    <div class="team-image">
-                        <img src="./img/ros (1).jpg" alt="">
-                        <h4 class="photo mt-3">Roshini</h4>
-                        <p class="last">Founder & CEO</p>
-                    </div>
-
-                </div>
-                <div class="col-lg-3 col-md-6 d-flex justify-content-center align-items-center mb-2">
-                    <div class="team-image">
-                        <img src="./img/ros (4).jpg" alt="">
-                        <h4 class="photo mt-3">Ramya</h4>
-                        <p class="last">Founder & CEO</p>
-                    </div>
-
-                </div>
-                <div class="col-lg-3 col-md-6 d-flex justify-content-center align-items-center mb-2">
-                    <div class="team-image">
-                        <img src="./img/chandra (1).jpg" alt="">
-                        <h4 class="photo mt-3">Chandra Kanth</h4>
-                        <p class="last">Founder & CEO</p>
-                    </div>
-
-                </div>
-                <div class="col-lg-3 col-md-6 d-flex justify-content-center align-items-center mb-2">
-                    <div class="team-image">
-                        <img src="./img/chandra (2).jpg" alt="">
-                        <h4 class="photo mt-3">Phanindra</h4>
-                        <p class="last">Founder & CEO</p>
-                    </div>
-
-                </div>
-                <div class="col-lg-3 col-md-6 d-flex justify-content-center align-items-center mb-2">
-                    <div class="team-image">
-                        <img src="./img/chandra (3).jpg" alt="">
-                        <h4 class="photo mt-3">Daiva Kumar</h4>
-                        <p class="last">Founder & CEO</p>
-                    </div>
-
-                </div>
-                <div class="col-lg-3 col-md-6 d-flex justify-content-center align-items-center mb-2">
-                    <div class="team-image">
-                        <img src="./img/chandra (4).jpg" alt="">
-                        <h4 class="photo mt-3">Jagadeesh</h4>
-                        <p class="last">Founder & CEO</p>
-                    </div>
-
-                </div>
-                <div class="col-lg-3 col-md-6 d-flex justify-content-center align-items-center mb-2">
-                    <div class="team-image">
-                        <img src="./img/ros (5).jpg" alt="">
-                        <h4 class="photo mt-3">Sathwika</h4>
-                        <p class="last">Founder & CEO</p>
-                    </div>
-
-                </div>
-                <div class="col-lg-3 col-md-6 d-flex justify-content-center align-items-center mb-2">
-                    <div class="team-image">
-                        <img src="./img/patterns4.png" alt="">
-                        <h4 class="photo mt-3">Pandu Reddy</h4>
-                        <p class="last">Aaj mei Khuch Naya Karunga</p>
-                    </div>
-
-                </div>
-                <div class="col-lg-3 col-md-6 d-flex justify-content-center align-items-center mb-2">
-                    <div class="team-image">
-                        <img src="./img/patterns6.png" alt="">
-                        <h4 class="photo mt-3">Srini</h4>
-                        <p class="last">Hyderabad Public School ka Property</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 d-flex justify-content-center align-items-center mb-2">
-                    <div class="team-image">
-                        <img src="./img/suvarna.jpg" alt="">
-                        <h4 class="photo mt-3">Suvarna</h4>
-                        <p class="last">Quickly put the developer on speed dial.</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
+   
 
     <style>
 
