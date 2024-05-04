@@ -1639,9 +1639,9 @@ html,body{
 }
  
 .jyothsna-img:hover{
-    animation: zoomIn 0.4s infinite;
+    animation: zoomInImg 0.4s infinite;
 }
-@keyframes zoomIn {
+@keyframes zoomInImg {
     0% {
     transform: translate(2px, 2px);
   }
