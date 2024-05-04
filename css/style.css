@@ -1638,11 +1638,25 @@ html,body{
     }
 }
  
-.jyothsna-img{
-    transition: transform 0.4s ease-in;
-}
 .jyothsna-img:hover{
-    transform: scale(1.1);
+    animation: zoomIn 0.4s infinite;
+}
+@keyframes zoomIn {
+    0% {
+    transform: translate(2px, 2px);
+  }
+  25% {
+    transform: translate(-2px, 2px);
+  }
+  50% {
+    transform: translate(-2px, -2px);
+  }
+  75% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(2px, 2px);
+  }
 }
 .dedeepya-img:hover{
     animation: zoomOut 0.7s ease-in-out;
