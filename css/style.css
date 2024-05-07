@@ -1716,3 +1716,7 @@ html,body{
         padding: 0;
     }
 }
+.text{
+    text-align:justify;
+    font-size:20px;
+}
