@@ -1709,3 +1709,10 @@ html,body{
     }
 
 }
+
+.alignment{
+    padding-top: 80px !important;
+    @media (max-width:992px){
+        padding: 0;
+    }
+}
