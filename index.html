@@ -132,7 +132,7 @@
             </div>
             <div class="col-lg-9">
                 <div class="video">
-                    <video id="myCanvas" class="video-player" loop autoplay preload="auto">
+                    <video id="myCanvas" class="video-player" loop autoplay muted preload="auto">
                         <source src="./img/video/Hello Apple Vision Pro.mp4" type="video/mp4">
                     </video>
                 </div>
@@ -301,7 +301,8 @@
     <div class="container-fluid bg-dark py-5">
         <div class="container py-5">
             <div class="row d-flex align-items-center">
-                <div class="col-lg-6 d-flex justify-content-center order-lg-2" data-aos="fade-left" data-wow-delay=".3s">
+                <div class="col-lg-6 d-flex justify-content-center order-lg-2" data-aos="fade-left"
+                    data-wow-delay=".3s">
                     <img src="./img/tim-removebg-preview.png" alt="Animated image" class="desc-img">
                 </div>
                 <div class="col-lg-6">
@@ -1253,6 +1254,12 @@
         AOS.init();
     </script>
     <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const canvas = document.getElementById('myCanvas');
+            if (canvas instanceof HTMLCanvasElement) {
+                canvas.play();
+            }
+        });
         document.getElementById("myForm").addEventListener("submit", function (event) {
             event.preventDefault(); // Prevent form submission
 
@@ -1276,6 +1283,7 @@
             window.location.href = whatsappUrl;
         });
     </script>
+
 </body>
 
 </html>
