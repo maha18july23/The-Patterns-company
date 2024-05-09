@@ -1721,6 +1721,6 @@ body{
     }
 }
 .text{
-    text-align:justify;
-    font-size:20px;
+    text-align: justify;
+    font-size: 1rem;
 }
