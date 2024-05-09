@@ -1046,13 +1046,21 @@ textarea {
     padding:0;
     box-sizing:border-box;   
 }
+
 html,body{
     height:100%;
-    width:100%;
+    max-width:100%;
     font-family: 'Heebo',sans-serif;
 }
 body{
-    margin: 0;
+    overflow-x: hidden;
+}
+@media (max-width:992px){
+    .container{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
 }
 
 #main{
