@@ -1027,7 +1027,7 @@ textarea {
 *{
     margin:0;
     padding:0;
-    box-sizing:border-box;
+    box-sizing:border-box;   
 }
 html,body{
     height:100%;
@@ -1035,8 +1035,9 @@ html,body{
     font-family: 'Heebo',sans-serif;
 }
 body{
-    overflow-x: hidden;
+    margin: 0;
 }
+
 #main{
     width: 100%;
     height:100vh;
