@@ -1049,7 +1049,7 @@ textarea {
 
 html,body{
     height:100%;
-    max-width:100%;
+    width:100%;
     font-family: 'Heebo',sans-serif;
     overflow-x: hidden;
 }
