@@ -1051,17 +1051,24 @@ html,body{
     height:100%;
     width:100%;
     font-family: 'Heebo',sans-serif;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 .container{
+    @media (max-width:992px){
+    
     /* padding: 0;
     margin: 0; */
     width: 100%;
     overflow-x: hidden;
+    }
 }
-/* @media (max-width:992px){
-    
-} */
+
+.container-fluid{
+    @media (min-width:992px){
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+}
 
 #main{
     width: 100%;
