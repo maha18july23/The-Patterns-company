@@ -1696,6 +1696,7 @@ html,body{
     transform: translate(2px, 2px);
   }
 }
+
 .dedeepya-img:hover{
     animation: zoomOut 0.7s ease-in-out;
 }
